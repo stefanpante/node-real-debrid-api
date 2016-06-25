@@ -13,7 +13,7 @@ var initForumNS = require('./lib/forum');
 var initSettingsNS = require('./lib/settings');
 
 
-function initRealDebridAPI(apiKey){
+function initRealDebridAPI(apiKey) {
     var apiRequest = createApiRequest(apiKey);
 
     var api = initNonNSMethods(apiRequest);
@@ -34,8 +34,8 @@ function initRealDebridAPI(apiKey){
 /**
  * Creates a new RealDebrid instance
  */
-function realDebrid(apiKey){
-    if(!APIKey){
+function realDebrid(apiKey) {
+    if (!APIKey) {
         throw new Error('APIKey is required to use the Real-debrid API');
     }
 
